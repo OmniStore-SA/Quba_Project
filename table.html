@@ -3,51 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جدول الدرجات</title>
+    <title>جدول الدرجات | ثانوية قباء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>جدول درجات الطلاب</h1>
+    <header class="hero-header mini-hero">
+        <div class="header-content">
+            <h1>جدول درجات الطلاب</h1>
+        </div>
     </header>
 
-    <main>
-        <table>
-            <tr>
-                <th>اسم الطالب</th>
-                <th>المادة</th>
-                <th>الدرجة</th>
-            </tr>
-            <tr>
-                <td>نايف</td>
-                <td>الرياضيات</td>
-                <td>95</td>
-            </tr>
-            <tr>
-                <td>محمد</td>
-                <td>الفيزياء</td>
-                <td>98</td>
-            </tr>
-            <tr>
-                <td>عبدالله</td>
-                <td>الكيمياء</td>
-                <td>90</td>
-            </tr>
-            <tr>
-                <td>سلطان</td>
-                <td>اللغة العربية</td>
-                <td>99</td>
-            </tr>
-            <tr>
-                <td>أحمد</td>
-                <td>اللغة الإنجليزية</td>
-                <td>94</td>
-            </tr>
-        </table>
+    <main class="container">
+        <section class="card table-section fade-in">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>اسم الطالب</th>
+                        <th>المادة</th>
+                        <th>الدرجة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>نايف</td><td>الرياضيات</td><td><span class="score">95</span></td></tr>
+                    <tr><td>محمد</td><td>الفيزياء</td><td><span class="score">98</span></td></tr>
+                    <tr><td>عبدالله</td><td>الكيمياء</td><td><span class="score">90</span></td></tr>
+                    <tr><td>سلطان</td><td>اللغة العربية</td><td><span class="score">99</span></td></tr>
+                    <tr><td>أحمد</td><td>اللغة الإنجليزية</td><td><span class="score">94</span></td></tr>
+                </tbody>
+            </table>
+        </section>
 
-        <div class="links">
-            <a href="index.html" class="btn">العودة للصفحة الرئيسية</a>
+        <div class="action-btn-container fade-in">
+            <a href="index.html" class="btn secondary-btn">🏠 العودة للصفحة الرئيسية</a>
         </div>
     </main>
 
