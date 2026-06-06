@@ -1,49 +1,261 @@
-/* تنسيقات قسم فريق العمل */
-.team-section {
-    margin-top: 30px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 10px 20px;
+/* إعدادات المتغيرات والخطوط */
+:root {
+    --primary-color: #006C35; /* أخضر ملكي */
+    --secondary-color: #1a252f; /* كحلي داكن */
+    --accent-color: #f39c12; /* ذهبي */
+    --bg-color: #f0f4f8;
+    --text-color: #333;
 }
 
-details {
-    cursor: pointer;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
 }
 
-summary {
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* الهيدر الاحترافي (Hero) */
+.hero-header {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.hero-header h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.badge h3 {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 25px;
+    border-radius: 30px;
     font-size: 1.2em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* حاوية المحتوى والكروت */
+.container {
+    max-width: 1000px;
+    margin: -30px auto 40px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #eee;
+    padding-bottom: 10px;
+}
+
+/* قائمة المواد */
+.modern-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.modern-list li {
+    background: var(--bg-color);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
     font-weight: bold;
-    color: #2c3e50;
-    padding: 10px 0;
+    color: var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    transition: all 0.3s;
+}
+
+.modern-list li:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* الصور وتأثيرات الوسائط */
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+/* فريق العمل (Details & Summary) */
+.modern-details summary {
+    background: var(--secondary-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
     outline: none;
+    transition: background 0.3s;
+}
+
+.modern-details summary:hover {
+    background: var(--primary-color);
 }
 
 .team-content {
-    margin-top: 15px;
-    padding-right: 15px;
-    border-right: 3px solid #27ae60;
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #eee;
+    border-top: none;
 }
 
-.team-content p {
-    margin: 8px 0;
+.team-member {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
     font-size: 1.1em;
 }
 
-.team-content span {
+.team-member span {
+    color: var(--accent-color);
     font-weight: bold;
-    color: #2c3e50;
+    margin-left: 10px;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 15px 0;
+.leader {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 900;
 }
 
 .team-note {
     text-align: center;
+    margin-top: 15px;
     font-weight: bold;
-    color: #27ae60;
+    color: var(--primary-color);
+    background: #eafaf1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* الجدول الاحترافي */
+.modern-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.modern-table th, .modern-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.modern-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.modern-table th:first-child { border-top-right-radius: 10px; }
+.modern-table th:last-child { border-top-left-radius: 10px; }
+
+.modern-table tbody tr:hover {
+    background-color: #f1f9f5;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.score {
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* الأزرار */
+.action-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, var(--accent-color), #d68910);
+    color: white;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(243, 156, 18, 0.4);
+}
+
+.secondary-btn {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: var(--primary-color);
+}
+
+/* أنيميشن الدخول */
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
