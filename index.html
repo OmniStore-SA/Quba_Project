@@ -2,17 +2,14 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <!-- وسم الصفحة المستجيبة -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أخبار مدرسة قباء الثانوية</title>
-    <!-- ربط ملف التنسيق CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>أخبار مدرسة قباء الثانوية</h1>
-        <!-- هنا سيظهر النص التفاعلي للوقت من الجافاسكريبت -->
         <h3 id="greetingMessage"></h3>
     </header>
 
@@ -27,19 +24,33 @@
         </ul>
 
         <h2>صور من المدرسة</h2>
-        <!-- أضفنا مسار الصور داخل مجلدك Abed -->
         <div class="media-container">
-            <img src="Abed/school1.jpg" alt="صورة المدرسة 1">
-            <img src="Abed/school2.jpg" alt="صورة المدرسة 2">
+            <img src="Abed/main.png" alt="واجهة مدرسة قباء الثانوية">
+            <img src="Abed/lab.png" alt="طلاب مدرسة قباء في معمل الحاسب">
+            <img src="Abed/event.png" alt="تجهيزات الحفل الختامي لدفعة 2027">
         </div>
 
-        <!-- رابط لصفحة الجدول -->
+        <!-- قسم أسماء الطلاب (القائمة المنسدلة) -->
+        <div class="team-section">
+            <details>
+                <summary>أسماء الطلاب المشاركين في المشروع</summary>
+                <div class="team-content">
+                    <p><span>المبرمج الطالب:</span> عابد معيش السلمي</p>
+                    <p><span>المساعد الطالب:</span> عبدالله ضيف الله السلمي</p>
+                    <p><span>المساعد الطالب:</span> انس عبدالاله العمري</p>
+                    <p><span>المساعد الطالب:</span> تامر رافت جان</p>
+                    <p><span>المساعد الطالب:</span> مؤيد هشام الزايدي</p>
+                    <hr>
+                    <p class="team-note">الجميع تساعد في انشاء الموقع بالكامل</p>
+                </div>
+            </details>
+        </div>
+
         <div class="links">
             <a href="table.html" class="btn">الانتقال إلى صفحة الجدول</a>
         </div>
     </main>
 
-    <!-- ربط ملف الجافا سكريبت JS (يُفضل وضعه قبل نهاية body) -->
     <script src="script.js"></script>
 </body>
 </html>
