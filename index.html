@@ -4,50 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أخبار مدرسة قباء الثانوية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>أخبار مدرسة قباء الثانوية</h1>
-        <h3 id="greetingMessage"></h3>
+    <header class="hero-header">
+        <div class="header-content">
+            <h1>أخبار مدرسة قباء الثانوية</h1>
+            <div class="badge">
+                <h3 id="greetingMessage">جاري تحميل الوقت...</h3>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <h2>قائمة المواد الدراسية</h2>
-        <ul>
-            <li>الرياضيات</li>
-            <li>الفيزياء</li>
-            <li>الكيمياء</li>
-            <li>اللغة العربية</li>
-            <li>اللغة الإنجليزية</li>
-        </ul>
+    <main class="container">
+        <section class="card subjects-section fade-in">
+            <h2><span class="icon">📚</span> قائمة المواد الدراسية</h2>
+            <ul class="modern-list">
+                <li>الرياضيات</li>
+                <li>الفيزياء</li>
+                <li>الكيمياء</li>
+                <li>اللغة العربية</li>
+                <li>اللغة الإنجليزية</li>
+            </ul>
+        </section>
 
-        <h2>صور من المدرسة</h2>
-        <div class="media-container">
-            <img src="Abed/main.png" alt="واجهة مدرسة قباء الثانوية">
-            <img src="Abed/lab.png" alt="طلاب مدرسة قباء في معمل الحاسب">
-            <img src="Abed/event.png" alt="تجهيزات الحفل الختامي لدفعة 2027">
-        </div>
+        <section class="card gallery-section fade-in">
+            <h2><span class="icon">📸</span> صور من المدرسة</h2>
+            <div class="media-container">
+                <div class="img-wrapper"><img src="Abed/main.png" alt="واجهة المدرسة"></div>
+                <div class="img-wrapper"><img src="Abed/lab.png" alt="المعمل"></div>
+                <div class="img-wrapper"><img src="Abed/event.png" alt="الحفل"></div>
+            </div>
+        </section>
 
-        <!-- قسم أسماء الطلاب (القائمة المنسدلة) -->
-        <div class="team-section">
-            <details>
-                <summary>أسماء الطلاب المشاركين في المشروع</summary>
+        <section class="card team-section fade-in">
+            <details class="modern-details">
+                <summary>👨‍💻 فريق عمل المشروع (اضغط هنا)</summary>
                 <div class="team-content">
-                    <p><span>المبرمج الطالب:</span> عابد معيش السلمي</p>
-                    <p><span>المساعد الطالب:</span> عبدالله ضيف الله السلمي</p>
-                    <p><span>المساعد الطالب:</span> انس عبدالاله العمري</p>
-                    <p><span>المساعد الطالب:</span> تامر رافت جان</p>
-                    <p><span>المساعد الطالب:</span> مؤيد هشام الزايدي</p>
-                    <hr>
-                    <p class="team-note">الجميع تساعد في انشاء الموقع بالكامل</p>
+                    <div class="team-member leader"><span>المبرمج القائد:</span> الطالب عابد معيش السلمي</div>
+                    <div class="team-member"><span>المساعد:</span> الطالب عبدالله ضيف الله السلمي</div>
+                    <div class="team-member"><span>المساعد:</span> الطالب انس عبدالاله العمري</div>
+                    <div class="team-member"><span>المساعد:</span> الطالب تامر رافت جان</div>
+                    <div class="team-member"><span>المساعد:</span> الطالب مؤيد هشام الزايدي</div>
+                    <div class="team-note">✨ الجميع تساعد في إنشاء الموقع بالكامل ✨</div>
                 </div>
             </details>
-        </div>
+        </section>
 
-        <div class="links">
-            <a href="table.html" class="btn">الانتقال إلى صفحة الجدول</a>
+        <div class="action-btn-container fade-in">
+            <a href="table.html" class="btn primary-btn">استعراض جدول الدرجات ➔</a>
         </div>
     </main>
 
