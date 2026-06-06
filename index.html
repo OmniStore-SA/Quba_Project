@@ -7,21 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
-    <header class="hero-header">
-        <div class="header-content">
-            <h1>أخبار مدرسة قباء الثانوية</h1>
-            <div class="badge">
-                <h3 id="greetingMessage">جاري تحميل الوقت...</h3>
-            </div>
+    <header class="cyber-header">
+        <div class="glow-effect"></div>
+        <h1>أخبار مدرسة قباء الثانوية</h1>
+        <div class="time-badge">
+            <h3 id="greetingMessage">جاري التحميل...</h3>
         </div>
     </header>
 
-    <main class="container">
-        <section class="card subjects-section fade-in">
-            <h2><span class="icon">📚</span> قائمة المواد الدراسية</h2>
-            <ul class="modern-list">
+    <main class="main-container">
+        <!-- قسم المواد -->
+        <section class="glass-card">
+            <h2 class="section-title"><span>📚</span> المواد الدراسية</h2>
+            <ul class="neon-list">
                 <li>الرياضيات</li>
                 <li>الفيزياء</li>
                 <li>الكيمياء</li>
@@ -30,31 +30,33 @@
             </ul>
         </section>
 
-        <section class="card gallery-section fade-in">
-            <h2><span class="icon">📸</span> صور من المدرسة</h2>
-            <div class="media-container">
-                <div class="img-wrapper"><img src="Abed/main.png" alt="واجهة المدرسة"></div>
-                <div class="img-wrapper"><img src="Abed/lab.png" alt="المعمل"></div>
-                <div class="img-wrapper"><img src="Abed/event.png" alt="الحفل"></div>
+        <!-- قسم الصور -->
+        <section class="glass-card">
+            <h2 class="section-title"><span>📸</span> جولة في المدرسة</h2>
+            <div class="premium-gallery">
+                <div class="img-box"><img src="Abed/main.png" alt="واجهة المدرسة"></div>
+                <div class="img-box"><img src="Abed/lab.png" alt="المعمل"></div>
+                <div class="img-box"><img src="Abed/event.png" alt="الحفل الختامي"></div>
             </div>
         </section>
 
-        <section class="card team-section fade-in">
-            <details class="modern-details">
-                <summary>👨‍💻 فريق عمل المشروع (اضغط هنا)</summary>
-                <div class="team-content">
-                    <div class="team-member leader"><span>المبرمج القائد:</span> الطالب عابد معيش السلمي</div>
-                    <div class="team-member"><span>المساعد:</span> الطالب عبدالله ضيف الله السلمي</div>
-                    <div class="team-member"><span>المساعد:</span> الطالب انس عبدالاله العمري</div>
-                    <div class="team-member"><span>المساعد:</span> الطالب تامر رافت جان</div>
-                    <div class="team-member"><span>المساعد:</span> الطالب مؤيد هشام الزايدي</div>
-                    <div class="team-note">✨ الجميع تساعد في إنشاء الموقع بالكامل ✨</div>
+        <!-- فريق العمل -->
+        <section class="glass-card">
+            <details class="cyber-details">
+                <summary>⚡ فريق عمل المشروع (اضغط للاستعراض)</summary>
+                <div class="team-list">
+                    <div class="member leader"><span class="role">المبرمج القائد:</span> عابد معيش السلمي</div>
+                    <div class="member"><span class="role">المساعد:</span> عبدالله ضيف الله السلمي</div>
+                    <div class="member"><span class="role">المساعد:</span> انس عبدالاله العمري</div>
+                    <div class="member"><span class="role">المساعد:</span> تامر رافت جان</div>
+                    <div class="member"><span class="role">المساعد:</span> مؤيد هشام الزايدي</div>
+                    <div class="footer-note">تم بناء وتطوير هذا الموقع بتعاون الجميع 🚀</div>
                 </div>
             </details>
         </section>
 
-        <div class="action-btn-container fade-in">
-            <a href="table.html" class="btn primary-btn">استعراض جدول الدرجات ➔</a>
+        <div class="btn-center">
+            <a href="table.html" class="neon-btn">استعراض جدول الدرجات ➔</a>
         </div>
     </main>
 
