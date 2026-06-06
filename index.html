@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- وسم الصفحة المستجيبة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخبار مدرسة قباء الثانوية</title>
+    <!-- ربط ملف التنسيق CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>أخبار مدرسة قباء الثانوية</h1>
+        <!-- هنا سيظهر النص التفاعلي للوقت من الجافاسكريبت -->
+        <h3 id="greetingMessage"></h3>
+    </header>
+
+    <main>
+        <h2>قائمة المواد الدراسية</h2>
+        <ul>
+            <li>الرياضيات</li>
+            <li>الفيزياء</li>
+            <li>الكيمياء</li>
+            <li>اللغة العربية</li>
+            <li>اللغة الإنجليزية</li>
+        </ul>
+
+        <h2>صور من المدرسة</h2>
+        <!-- أضفنا مسار الصور داخل مجلدك Abed -->
+        <div class="media-container">
+            <img src="Abed/school1.jpg" alt="صورة المدرسة 1">
+            <img src="Abed/school2.jpg" alt="صورة المدرسة 2">
+        </div>
+
+        <!-- رابط لصفحة الجدول -->
+        <div class="links">
+            <a href="table.html" class="btn">الانتقال إلى صفحة الجدول</a>
+        </div>
+    </main>
+
+    <!-- ربط ملف الجافا سكريبت JS (يُفضل وضعه قبل نهاية body) -->
+    <script src="script.js"></script>
+</body>
+</html>
